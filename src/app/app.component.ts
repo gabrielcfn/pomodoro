@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pomodoro';
+  temporizador = 25
+
+  iniciarContagem() {
+    console.log('asdasasd')
+    setTimeout( ()=>{ 
+      this.temporizador--
+      if (this.temporizador > 0) {
+        this.iniciarContagem();
+      } else {
+        alert('O tempo acabou')
+      }
+    }, 1000)
+  }
+
 }
