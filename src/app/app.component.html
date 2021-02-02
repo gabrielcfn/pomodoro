@@ -5,7 +5,7 @@
         <h3>Contador</h3>
       </div>
       <div class="contador--corpo">
-        <p>{{temporizador}}</p>
+        <input type="tel" [(ngModel)]="temporizador" #ctrl="ngModel">
         <button (click)="iniciarContagem()">Início</button>
       </div>
     </section>
