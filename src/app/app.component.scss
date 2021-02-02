@@ -1,0 +1,43 @@
+.container {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.contador {
+    margin:0 auto;
+    width: 36%;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+    border: 2px solid #be2f2f;
+    border-radius: 5px;
+
+    .contador--cabecalho {
+        background-color: #be2f2f;
+        border-radius: 3px 3px 0 0 ;
+        padding: 4px 0px;
+        color: #fff;
+        font-size: 16pt;
+    }
+
+    .contador--corpo {
+        padding: 10px 5px;
+        p {
+            padding: 15px 0;
+            font-size: 16pt;
+        }
+        button {
+            padding: 10px 20px;
+            width:90%;
+            background-color: #be2f2f;
+            color: #fff;
+            border:0px;
+            font-size: 16pt;
+        }
+        button:hover {
+            box-shadow: inset 0 0 3px gold, 0 0 4px red;
+        }
+    }
+}
